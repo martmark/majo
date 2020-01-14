@@ -1837,7 +1837,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
+		background: rgba(255, 255, 255);
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -2253,7 +2253,7 @@ input, select, textarea {
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		/* background-repeat: repeat, no-repeat; */
 	}
 
 /* One */
@@ -2262,7 +2262,9 @@ input, select, textarea {
 		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background-position-y: 40;
+		/* background-position-x: center;
+		background-position-y: top; */
 	}
 
 	@media only screen  
