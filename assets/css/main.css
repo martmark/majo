@@ -1949,10 +1949,10 @@ input, select, textarea {
 		}
 
 		.main.style1 {
-			-moz-align-items: center;
-			-webkit-align-items: center;
-			-ms-align-items: center;
-			align-items: center;
+			-moz-align-items: flex-end;
+			-webkit-align-items: flex-end;
+			-ms-align-items: flex-end;
+			align-items: flex-end;
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
@@ -2263,6 +2263,16 @@ input, select, textarea {
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
+	}
+
+	@media only screen  
+  and (max-device-width: 736px) {
+		#one {
+			background: url("images/overlay.png"), url("../../images/two.jpg");
+			background-position-x: center;
+			background-size: 675px;
+			background-position-y: center;
+		}
 	}
 
 /* Two */
