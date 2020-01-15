@@ -588,73 +588,74 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
-	let langButton = document.getElementById("language-button");
-	let langButton2 = document.getElementById("language-button2");
-	let langButton3 = document.getElementById("language-button3");
-	let langButton4 = document.getElementById("language-button4");
-	// console.log(langButton);
-	langButton.addEventListener("click", () => {
-		document.getElementById('eng-nav').classList.toggle("hidden");
-		document.getElementById('esp-nav').classList.toggle("hidden");
-		document.getElementById('eng-header').classList.toggle("hidden");
-		document.getElementById('esp-header').classList.toggle("hidden");
-		document.getElementById('eng-header2').classList.toggle("hidden");
-		document.getElementById('esp-header2').classList.toggle("hidden");
-		document.getElementById('eng-aboutme').classList.toggle("hidden");
-		document.getElementById('esp-aboutme').classList.toggle("hidden");
-		document.getElementById('eng-work').classList.toggle("hidden");
-		document.getElementById('esp-work').classList.toggle("hidden");
-		document.getElementById('eng-contact').classList.toggle("hidden");
-		document.getElementById('esp-contact').classList.toggle("hidden");
-		langButton3.classList.toggle("hidden");
-		langButton4.classList.toggle("hidden");
-	});
-	langButton2.addEventListener("click", () => {
-		document.getElementById('eng-nav').classList.toggle("hidden");
-		document.getElementById('esp-nav').classList.toggle("hidden");
-		document.getElementById('eng-header').classList.toggle("hidden");
-		document.getElementById('esp-header').classList.toggle("hidden");
-		document.getElementById('eng-header2').classList.toggle("hidden");
-		document.getElementById('esp-header2').classList.toggle("hidden");
-		document.getElementById('eng-aboutme').classList.toggle("hidden");
-		document.getElementById('esp-aboutme').classList.toggle("hidden");
-		document.getElementById('eng-work').classList.toggle("hidden");
-		document.getElementById('esp-work').classList.toggle("hidden");
-		document.getElementById('eng-contact').classList.toggle("hidden");
-		document.getElementById('esp-contact').classList.toggle("hidden");
-		langButton3.classList.toggle("hidden");
-		langButton4.classList.toggle("hidden");
-	});
-	langButton3.addEventListener("click", () => {
-		document.getElementById('eng-nav').classList.toggle("hidden");
-		document.getElementById('esp-nav').classList.toggle("hidden");
-		document.getElementById('eng-header').classList.toggle("hidden");
-		document.getElementById('esp-header').classList.toggle("hidden");
-		document.getElementById('eng-header2').classList.toggle("hidden");
-		document.getElementById('esp-header2').classList.toggle("hidden");
-		document.getElementById('eng-aboutme').classList.toggle("hidden");
-		document.getElementById('esp-aboutme').classList.toggle("hidden");
-		document.getElementById('eng-work').classList.toggle("hidden");
-		document.getElementById('esp-work').classList.toggle("hidden");
-		document.getElementById('eng-contact').classList.toggle("hidden");
-		document.getElementById('esp-contact').classList.toggle("hidden");
-		langButton3.classList.toggle("hidden");
-		langButton4.classList.toggle("hidden");
-	});
-	langButton4.addEventListener("click", () => {
-		document.getElementById('eng-nav').classList.toggle("hidden");
-		document.getElementById('esp-nav').classList.toggle("hidden");
-		document.getElementById('eng-header').classList.toggle("hidden");
-		document.getElementById('esp-header').classList.toggle("hidden");
-		document.getElementById('eng-header2').classList.toggle("hidden");
-		document.getElementById('esp-header2').classList.toggle("hidden");
-		document.getElementById('eng-aboutme').classList.toggle("hidden");
-		document.getElementById('esp-aboutme').classList.toggle("hidden");
-		document.getElementById('eng-work').classList.toggle("hidden");
-		document.getElementById('esp-work').classList.toggle("hidden");
-		document.getElementById('eng-contact').classList.toggle("hidden");
-		document.getElementById('esp-contact').classList.toggle("hidden");
-		langButton3.classList.toggle("hidden");
-		langButton4.classList.toggle("hidden");
+	let buttons = [];
+	let eles = [];
+	let inputs = [];
+
+	let button3 = document.getElementById("language-button3");
+	let button4 = document.getElementById("language-button4");
+	buttons.push(document.getElementById("language-button"));
+	buttons.push(document.getElementById("language-button2"));
+	buttons.push(button3);
+	buttons.push(button4);
+
+	eles.push(document.getElementById('eng-nav'));
+	eles.push(document.getElementById('esp-nav'));
+	eles.push(document.getElementById('eng-header'));
+	eles.push(document.getElementById('esp-header'));
+	eles.push(document.getElementById('eng-header2'));
+	eles.push(document.getElementById('esp-header2'));
+	eles.push(document.getElementById('eng-aboutme'));
+	eles.push(document.getElementById('esp-aboutme'));
+	eles.push(document.getElementById('eng-work'));
+	eles.push(document.getElementById('esp-work'));
+	eles.push(document.getElementById('eng-contact'));
+	eles.push(document.getElementById('esp-contact'));
+
+	inputs.push(document.getElementById('nameinput'));
+	inputs.push(document.getElementById('messageinput'));
+	inputs.push(document.getElementById('emailinput'));
+
+	let sendButton = document.getElementById('sendbutton');
+	console.log(sendButton);
+
+	buttons.forEach(button => {
+		button.addEventListener("click", () => {
+			eles.forEach(ele => {
+				ele.classList.toggle('hidden');
+			});
+
+			inputs.forEach(input => {
+				switch (input.placeholder) {
+					case "Name*":
+						input.placeholder = "Nombre*";
+						break;
+					case "Nombre*":
+						input.placeholder = 'Name*';
+						break;
+					case 'Message*':
+						input.placeholder = 'Mensaje*';
+						break;
+					case 'Mensaje*':
+						input.placeholder = 'Message*';
+						break;
+					case 'Email*':
+						input.placeholder = 'Correo electrónico*';
+						break;
+					case 'Correo electrónico*':
+						input.placeholder = 'Email*';
+						break;
+				}
+			});
+
+			if (sendButton.value == 'Send Message') {
+				sendButton.value = 'Enviar Mensaje';
+			} else {
+				sendButton.value = 'Send Message';
+			}
+
+			button3.classList.toggle('hidden');
+			button4.classList.toggle('hidden');
+		});
 	});
 });
