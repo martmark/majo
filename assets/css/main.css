@@ -2303,6 +2303,17 @@ input, select, textarea {
 		}
 	}
 
+	@media only screen  
+	and (max-device-width: 1024px) 
+	and (orientation: portrait) {
+		#one {
+			background: url("images/overlay.png"), url("../../images/two.jpg");
+			background-position-x: center;
+			background-size: 100vh;
+			background-position-y: center;
+		}
+	}
+
 /* Two */
 
 	#two {
