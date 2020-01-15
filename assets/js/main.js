@@ -88,9 +88,9 @@
 				overlayColor: '#1f2328',
 				overlayOpacity: 0.65,
 				usePopupDefaultStyling: false,
-				usePopupCaption: true,
+				usePopupCaption: false,
 				popupLoaderText: '',
-				windowMargin: 50,
+				windowMargin: 0,
 				usePopupNav: true
 			});
 

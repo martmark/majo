@@ -1272,7 +1272,7 @@ input, select, textarea {
 		-ms-box-sizing: content-box;
 		box-sizing: content-box;
 		background: #fff;
-		padding-bottom: 3em;
+		/* padding-bottom: 3em; */
 		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
 	}
 
@@ -1301,7 +1301,7 @@ input, select, textarea {
 				color: #e5e6e7;
 				content: '\f1ce';
 				cursor: default;
-				display: block;
+				display: none;
 				height: 2em;
 				left: 0;
 				line-height: 2em;
@@ -2363,6 +2363,10 @@ input, select, textarea {
 
 .society6 img {
 	width: 30%;
+}
+
+caption {
+	display: none;
 }
 
 .hidden {
