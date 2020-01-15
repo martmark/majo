@@ -78,6 +78,9 @@
 		}
 	}
 
+.mobilebutton {
+	display: none;
+}
 /* Two */
 
 	#two {
@@ -85,6 +88,10 @@
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
+	}
+
+	#society6 {
+		background: url('../../images/society6.png');
 	}
 
 /* Contact */
@@ -117,3 +124,7 @@
 			}
 		}
 	}
+
+.hidden {
+	display: none;
+}

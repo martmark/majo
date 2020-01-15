@@ -90,6 +90,20 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
+.mobilebutton {
+	display: none;
+	background-color: #98c593;
+	position: absolute;
+	top: 7px;
+	right: 3px;
+	height: 25px;
+	width: 30px;
+	text-align: center;
+	align-items: center;
+	color: white;
+	border-radius: 50px;
+}
+
 	body {
 		background: #ffffff;
 		height: 100%;
@@ -572,6 +586,12 @@ input, select, textarea {
 			font-size: 1.5em;
 		}
 
+		.mobilebutton {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
 	}
 
 	strong, b {
@@ -763,7 +783,19 @@ input, select, textarea {
 			button.style2.down {
 				background-image: url("images/arrow.svg");
 			}
+/* 
+#button-li {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+} */
 
+/* #language-button {
+	
+	height: 20px;
+} */
 /* Form */
 
 	form {
@@ -1279,19 +1311,9 @@ input, select, textarea {
 				width: 2em;
 			}
 
-		.poptrox-popup .caption {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			background: #ffffff;
-			width: 100%;
-			height: 3em;
-			line-height: 2.8em;
-			text-align: center;
-			cursor: default;
-			z-index: 1;
-			font-size: 0.9em;
-		}
+		/* .poptrox-popup .caption {
+			display: none;
+		} */
 
 		.poptrox-popup .nav-next,
 		.poptrox-popup .nav-previous {
@@ -1866,10 +1888,11 @@ input, select, textarea {
 
 			#header nav ul {
 				margin: 0;
+				/* display: flex; */
 			}
 
 				#header nav ul li {
-					display: inline-block;
+					/* display: inline-block; */
 					margin-left: 0.5em;
 					font-size: 0.9em;
 				}
@@ -1922,6 +1945,9 @@ input, select, textarea {
 
 		}
 
+.header-ul {
+	display: flex;
+}
 /* Main */
 
 	.main {
@@ -2327,3 +2353,22 @@ input, select, textarea {
 			}
 
 		}
+
+
+.society6 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.society6 img {
+	width: 30%;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+

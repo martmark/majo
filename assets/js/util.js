@@ -585,3 +585,76 @@
 	};
 
 })(jQuery);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+	let langButton = document.getElementById("language-button");
+	let langButton2 = document.getElementById("language-button2");
+	let langButton3 = document.getElementById("language-button3");
+	let langButton4 = document.getElementById("language-button4");
+	// console.log(langButton);
+	langButton.addEventListener("click", () => {
+		document.getElementById('eng-nav').classList.toggle("hidden");
+		document.getElementById('esp-nav').classList.toggle("hidden");
+		document.getElementById('eng-header').classList.toggle("hidden");
+		document.getElementById('esp-header').classList.toggle("hidden");
+		document.getElementById('eng-header2').classList.toggle("hidden");
+		document.getElementById('esp-header2').classList.toggle("hidden");
+		document.getElementById('eng-aboutme').classList.toggle("hidden");
+		document.getElementById('esp-aboutme').classList.toggle("hidden");
+		document.getElementById('eng-work').classList.toggle("hidden");
+		document.getElementById('esp-work').classList.toggle("hidden");
+		document.getElementById('eng-contact').classList.toggle("hidden");
+		document.getElementById('esp-contact').classList.toggle("hidden");
+		langButton3.classList.toggle("hidden");
+		langButton4.classList.toggle("hidden");
+	});
+	langButton2.addEventListener("click", () => {
+		document.getElementById('eng-nav').classList.toggle("hidden");
+		document.getElementById('esp-nav').classList.toggle("hidden");
+		document.getElementById('eng-header').classList.toggle("hidden");
+		document.getElementById('esp-header').classList.toggle("hidden");
+		document.getElementById('eng-header2').classList.toggle("hidden");
+		document.getElementById('esp-header2').classList.toggle("hidden");
+		document.getElementById('eng-aboutme').classList.toggle("hidden");
+		document.getElementById('esp-aboutme').classList.toggle("hidden");
+		document.getElementById('eng-work').classList.toggle("hidden");
+		document.getElementById('esp-work').classList.toggle("hidden");
+		document.getElementById('eng-contact').classList.toggle("hidden");
+		document.getElementById('esp-contact').classList.toggle("hidden");
+		langButton3.classList.toggle("hidden");
+		langButton4.classList.toggle("hidden");
+	});
+	langButton3.addEventListener("click", () => {
+		document.getElementById('eng-nav').classList.toggle("hidden");
+		document.getElementById('esp-nav').classList.toggle("hidden");
+		document.getElementById('eng-header').classList.toggle("hidden");
+		document.getElementById('esp-header').classList.toggle("hidden");
+		document.getElementById('eng-header2').classList.toggle("hidden");
+		document.getElementById('esp-header2').classList.toggle("hidden");
+		document.getElementById('eng-aboutme').classList.toggle("hidden");
+		document.getElementById('esp-aboutme').classList.toggle("hidden");
+		document.getElementById('eng-work').classList.toggle("hidden");
+		document.getElementById('esp-work').classList.toggle("hidden");
+		document.getElementById('eng-contact').classList.toggle("hidden");
+		document.getElementById('esp-contact').classList.toggle("hidden");
+		langButton3.classList.toggle("hidden");
+		langButton4.classList.toggle("hidden");
+	});
+	langButton4.addEventListener("click", () => {
+		document.getElementById('eng-nav').classList.toggle("hidden");
+		document.getElementById('esp-nav').classList.toggle("hidden");
+		document.getElementById('eng-header').classList.toggle("hidden");
+		document.getElementById('esp-header').classList.toggle("hidden");
+		document.getElementById('eng-header2').classList.toggle("hidden");
+		document.getElementById('esp-header2').classList.toggle("hidden");
+		document.getElementById('eng-aboutme').classList.toggle("hidden");
+		document.getElementById('esp-aboutme').classList.toggle("hidden");
+		document.getElementById('eng-work').classList.toggle("hidden");
+		document.getElementById('esp-work').classList.toggle("hidden");
+		document.getElementById('eng-contact').classList.toggle("hidden");
+		document.getElementById('esp-contact').classList.toggle("hidden");
+		langButton3.classList.toggle("hidden");
+		langButton4.classList.toggle("hidden");
+	});
+});
