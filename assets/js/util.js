@@ -617,7 +617,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	inputs.push(document.getElementById('emailinput'));
 
 	let sendButton = document.getElementById('sendbutton');
-	console.log(sendButton);
 
 	buttons.forEach(button => {
 		button.addEventListener("click", () => {
